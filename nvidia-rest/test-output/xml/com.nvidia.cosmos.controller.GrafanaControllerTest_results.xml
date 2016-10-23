@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Nvidia-Rest_API's-Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.319">
+  <properties />
+  
+  
+            <testcase name="nodeGrafanaDataByCustomer" time="0.165" classname="com.nvidia.cosmos.controller.GrafanaControllerTest" />
+                <testcase name="customerGrfanaDetails" time="0.038" classname="com.nvidia.cosmos.controller.GrafanaControllerTest" />
+                <testcase name="clusterGrafanaDataByCustomer" time="0.116" classname="com.nvidia.cosmos.controller.GrafanaControllerTest" />
+      
+</testsuite>

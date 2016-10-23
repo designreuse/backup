@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="78835" started-at="2016-05-18T14:05:00Z" finished-at="2016-05-18T14:06:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="78835" started-at="2016-05-18T14:05:00Z" finished-at="2016-05-18T14:06:19Z">
+      <class name="com.nvidia.cosmos.services.user.service.impl.UserServiceImplTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nvidia.cosmos.services.user.service.impl.UserServiceImplTest@10e92f8f]" name="setUp" is-config="true" duration-ms="3939" started-at="2016-05-18T19:35:00Z" finished-at="2016-05-18T19:35:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testUser()[pri:0, instance:com.nvidia.cosmos.services.user.service.impl.UserServiceImplTest@10e92f8f]" name="testUser" duration-ms="74824" started-at="2016-05-18T19:35:04Z" finished-at="2016-05-18T19:36:19Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at com.nvidia.cosmos.services.user.service.impl.UserServiceImplTest.testUser(UserServiceImplTest.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.nvidia.cosmos.services.user.service.impl.UserServiceImplTest@10e92f8f]" name="tearDown" is-config="true" duration-ms="60" started-at="2016-05-18T19:36:19Z" finished-at="2016-05-18T19:36:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nvidia.cosmos.services.user.service.impl.UserServiceImplTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Nvidia-Rest_API's-Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.317">
+  <properties />
+  
+  
+            <testcase name="saveEula" time="0.317" classname="com.nvidia.cosmos.controller.EulaControllerTest" />
+      
+</testsuite>

@@ -1,0 +1,76 @@
+ul.list-group.clear-list.darker-images {
+    overflow-y: auto;
+    max-height: 215px;
+}
+span.docker-text {
+    margin-left: 10px;
+}
+span.labels {
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+::-webkit-scrollbar { width: 6px; height: 3px;}
+::-webkit-scrollbar-track {  background-color: #999;  }
+::-webkit-scrollbar-track-piece { background-color: #efefef;}
+::-webkit-scrollbar-thumb {  background-color: #999; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}}
+::-webkit-resizer { background-color: #999;}
+
+<!-- new css added by venky 29/4/16 start-->
+<!-- login page css start -->
+
+button.btn.btn-primary {
+    background: #76b900! important;
+    border-color: #76b900! important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus {
+    background-color: #76d300! important;
+    border-color: #76d300! important;
+    color: #FFFFFF;
+}
+.btn-primary:active{
+  box-shadow: inset 1px 1px 0px 0px #010101;
+}
+a.forget_password{
+	color: #76d300! important;
+}
+a.forget_password:hover {
+    text-decoration: underline;
+}
+i.fa.fa-eye.primary {
+    color: #76D300;
+}
+i.fa.fa-desktop.primary{
+    color: #76D300;	
+}
+i.fa.fa-desktop.fa-1x{
+	color: #C0C0C0;	
+}
+i.fa.fa-desktop.primary{
+    color: #76D300;	
+}
+i.fa.fa-desktop.fa-1x{
+	color: #C0C0C0;	
+}
+
+<!-- login page css end -->
+<!-- inner page css start -->
+.dashboard_logo{
+	width: 172px;
+	height: 32px;
+}
+<!-- inner page css end -->
+<!-- new css added by venky 29/4/16 end-->
+
+
+
+<!--added in jobs.jsp page -->
+a[disabled="disabled"] {
+        pointer-events: none !important;
+    }
+    
+    .btn-disabled{
+    	pointer-events: none !important;
+    }

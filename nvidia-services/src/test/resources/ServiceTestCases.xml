@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ServiceTestSuite" parallel="false">
+   <listeners>
+
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>   -
+  <test name="ServiceTest">
+    <classes>
+      <class name="com.nvidia.cosmos.services.customer.service.impl.CustomerServiceImplTest"/>
+      <class name="com.nvidia.cosmos.services.role.service.impl.RoleServiceImplTest"/>
+      <class name="com.nvidia.cosmos.services.user.service.impl.UserServiceImplTest"/>
+      <class name="com.nvidia.cosmos.services.cluster.service.impl.ClusterServiceImplTest"/>
+      <class name="com.nvidia.cosmos.services.appliance.service.impl.ApplianceServiceImplTest"/>
+      <class name="com.nvidia.cosmos.services.entitlement.service.impl.EntitlementServiceImplTest"/>
+      <class name="com.nvidia.cosmos.services.token.service.impl.TokenServiceImplTest"/>
+      <class name="com.nvidia.cosmos.services.node.service.impl.NodeServiceImplTest"/>
+      <class name="com.nvidia.cosmos.services.userauth.service.impl.UserAuthServiceImplTest"/>
+      
+     
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

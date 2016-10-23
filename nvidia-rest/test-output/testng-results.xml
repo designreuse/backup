@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="8" total="34" passed="26">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8362" started-at="2016-09-01T14:49:29Z" finished-at="2016-09-01T14:49:38Z">
+    <groups>
+    </groups>
+    <test name="Nvidia-Rest_API&#039;s-Test" duration-ms="8362" started-at="2016-09-01T14:49:29Z" finished-at="2016-09-01T14:49:38Z">
+      <class name="com.nvidia.cosmos.controller.DashBoardControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.DashBoardControllerTest@4923ab24]" name="initSpec" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="PASS" signature="dashboard()[pri:0, instance:com.nvidia.cosmos.controller.DashBoardControllerTest@4923ab24]" name="dashboard" duration-ms="39" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboard -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.DashBoardControllerTest@4923ab24]" name="cleanUp" is-config="true" duration-ms="0" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.DashBoardControllerTest -->
+      <class name="com.nvidia.cosmos.controller.EulaControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.EulaControllerTest@46daef40]" name="initSpec" is-config="true" duration-ms="2" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="PASS" signature="saveEula()[pri:0, instance:com.nvidia.cosmos.controller.EulaControllerTest@46daef40]" name="saveEula" duration-ms="317" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveEula -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.EulaControllerTest@46daef40]" name="cleanUp" is-config="true" duration-ms="0" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.EulaControllerTest -->
+      <class name="com.nvidia.cosmos.controller.GrafanaControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.GrafanaControllerTest@13c27452]" name="initSpec" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="PASS" signature="clusterGrafanaDataByCustomer()[pri:0, instance:com.nvidia.cosmos.controller.GrafanaControllerTest@13c27452]" name="clusterGrafanaDataByCustomer" duration-ms="116" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clusterGrafanaDataByCustomer -->
+        <test-method status="PASS" signature="nodeGrafanaDataByCustomer()[pri:0, instance:com.nvidia.cosmos.controller.GrafanaControllerTest@13c27452]" name="nodeGrafanaDataByCustomer" duration-ms="165" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nodeGrafanaDataByCustomer -->
+        <test-method status="PASS" signature="customerGrfanaDetails()[pri:0, instance:com.nvidia.cosmos.controller.GrafanaControllerTest@13c27452]" name="customerGrfanaDetails" duration-ms="38" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerGrfanaDetails -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.GrafanaControllerTest@13c27452]" name="cleanUp" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.GrafanaControllerTest -->
+      <class name="com.nvidia.cosmos.controller.ClusterControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.ClusterControllerTest@27f723]" name="initSpec" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="FAIL" signature="updateClusterNfsDetails()[pri:0, instance:com.nvidia.cosmos.controller.ClusterControllerTest@27f723]" name="updateClusterNfsDetails" duration-ms="131" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <exception class="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">
+            <message>
+              <![CDATA[Unrecognized field "timestamp" (class com.nvidia.cosmos.cloud.dtos.ApiResponseDTO), not marked as ignorable (2 known properties: "message", "statusCode"])
+ at [Source: {"timestamp":1472741373281,"status":401,"error":"Unauthorized","message":"No message available","path":"/api/cluster/updatenfs"}; line: 1, column: 27] (through reference chain: com.nvidia.cosmos.cloud.dtos.ApiResponseDTO["timestamp"])]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "timestamp" (class com.nvidia.cosmos.cloud.dtos.ApiResponseDTO), not marked as ignorable (2 known properties: "message", "statusCode"])
+ at [Source: {"timestamp":1472741373281,"status":401,"error":"Unauthorized","message":"No message available","path":"/api/cluster/updatenfs"}; line: 1, column: 27] (through reference chain: com.nvidia.cosmos.cloud.dtos.ApiResponseDTO["timestamp"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:51)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:839)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1045)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1352)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:264)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:125)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3736)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2764)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:43)
+	at com.jayway.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at com.jayway.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:60)
+	at com.jayway.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
+	at com.jayway.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:202)
+	at com.jayway.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)
+	at com.jayway.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:55)
+	at com.jayway.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at com.jayway.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:216)
+	at com.jayway.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:159)
+	at com.nvidia.cosmos.controller.ClusterControllerTest.updateClusterNfsDetails(ClusterControllerTest.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClusterNfsDetails -->
+        <test-method status="PASS" signature="findAllClustersDetails()[pri:0, instance:com.nvidia.cosmos.controller.ClusterControllerTest@27f723]" name="findAllClustersDetails" duration-ms="58" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllClustersDetails -->
+        <test-method status="PASS" signature="getClusterByName()[pri:0, instance:com.nvidia.cosmos.controller.ClusterControllerTest@27f723]" name="getClusterByName" duration-ms="40" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClusterByName -->
+        <test-method status="PASS" signature="getNodeInfo()[pri:0, instance:com.nvidia.cosmos.controller.ClusterControllerTest@27f723]" name="getNodeInfo" duration-ms="37" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNodeInfo -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.ClusterControllerTest@27f723]" name="cleanUp" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.ClusterControllerTest -->
+      <class name="com.nvidia.cosmos.controller.EntitilementControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.EntitilementControllerTest@5bcea91b]" name="initSpec" is-config="true" duration-ms="3" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="PASS" signature="saveEntitilement1()[pri:0, instance:com.nvidia.cosmos.controller.EntitilementControllerTest@5bcea91b]" name="saveEntitilement1" duration-ms="112" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveEntitilement1 -->
+        <test-method status="PASS" signature="listCEntitlements1()[pri:0, instance:com.nvidia.cosmos.controller.EntitilementControllerTest@5bcea91b]" name="listCEntitlements1" duration-ms="119" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listCEntitlements1 -->
+        <test-method status="PASS" signature="listByEntitlementName()[pri:0, instance:com.nvidia.cosmos.controller.EntitilementControllerTest@5bcea91b]" name="listByEntitlementName" duration-ms="54" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listByEntitlementName -->
+        <test-method status="PASS" signature="fetchByEntitlementName()[pri:0, instance:com.nvidia.cosmos.controller.EntitilementControllerTest@5bcea91b]" name="fetchByEntitlementName" duration-ms="68" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchByEntitlementName -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.EntitilementControllerTest@5bcea91b]" name="cleanUp" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.EntitilementControllerTest -->
+      <class name="com.nvidia.cosmos.controller.UserControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="initSpec" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:35Z" finished-at="2016-09-01T20:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="PASS" signature="register()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="register" duration-ms="136" started-at="2016-09-01T20:19:35Z" finished-at="2016-09-01T20:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="updateuser()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="updateuser" duration-ms="53" started-at="2016-09-01T20:19:35Z" finished-at="2016-09-01T20:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateuser -->
+        <test-method status="PASS" signature="listUsers()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="listUsers" duration-ms="56" started-at="2016-09-01T20:19:35Z" finished-at="2016-09-01T20:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listUsers -->
+        <test-method status="PASS" signature="findUserProfile()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="findUserProfile" duration-ms="30" started-at="2016-09-01T20:19:35Z" finished-at="2016-09-01T20:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findUserProfile -->
+        <test-method status="PASS" signature="userValidate()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="userValidate" duration-ms="613" started-at="2016-09-01T20:19:35Z" finished-at="2016-09-01T20:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userValidate -->
+        <test-method status="PASS" signature="profileUpdate()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="profileUpdate" duration-ms="39" started-at="2016-09-01T20:19:36Z" finished-at="2016-09-01T20:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileUpdate -->
+        <test-method status="FAIL" signature="userDelete()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="userDelete" duration-ms="40" started-at="2016-09-01T20:19:36Z" finished-at="2016-09-01T20:19:36Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at com.nvidia.cosmos.controller.UserControllerTest.userDelete(UserControllerTest.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userDelete -->
+        <test-method status="PASS" signature="updateUserProfile()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="updateUserProfile" duration-ms="1888" started-at="2016-09-01T20:19:36Z" finished-at="2016-09-01T20:19:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserProfile -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.UserControllerTest@5f3a4b84]" name="cleanUp" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:38Z" finished-at="2016-09-01T20:19:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.UserControllerTest -->
+      <class name="com.nvidia.cosmos.controller.LoginControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.LoginControllerTest@670b40af]" name="initSpec" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="PASS" signature="reset()[pri:0, instance:com.nvidia.cosmos.controller.LoginControllerTest@670b40af]" name="reset" duration-ms="73" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+        <test-method status="PASS" signature="resetverify()[pri:0, instance:com.nvidia.cosmos.controller.LoginControllerTest@670b40af]" name="resetverify" duration-ms="51" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetverify -->
+        <test-method status="FAIL" signature="resetuser()[pri:0, instance:com.nvidia.cosmos.controller.LoginControllerTest@670b40af]" name="resetuser" duration-ms="188" started-at="2016-09-01T20:19:35Z" finished-at="2016-09-01T20:19:35Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at com.nvidia.cosmos.controller.LoginControllerTest.resetuser(LoginControllerTest.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetuser -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.LoginControllerTest@670b40af]" name="cleanUp" is-config="true" duration-ms="0" started-at="2016-09-01T20:19:35Z" finished-at="2016-09-01T20:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.LoginControllerTest -->
+      <class name="com.nvidia.cosmos.controller.NodeControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.NodeControllerTest@7a9273a8]" name="initSpec" is-config="true" duration-ms="1" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="PASS" signature="nodecreate()[pri:0, instance:com.nvidia.cosmos.controller.NodeControllerTest@7a9273a8]" name="nodecreate" duration-ms="214" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nodecreate -->
+        <test-method status="PASS" signature="getNodeByName()[pri:0, instance:com.nvidia.cosmos.controller.NodeControllerTest@7a9273a8]" name="getNodeByName" duration-ms="38" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNodeByName -->
+        <test-method status="PASS" signature="getNodeByCluster()[pri:0, instance:com.nvidia.cosmos.controller.NodeControllerTest@7a9273a8]" name="getNodeByCluster" duration-ms="37" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNodeByCluster -->
+        <test-method status="PASS" signature="getNodeById()[pri:0, instance:com.nvidia.cosmos.controller.NodeControllerTest@7a9273a8]" name="getNodeById" duration-ms="40" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNodeById -->
+        <test-method status="FAIL" signature="upgradeOnBootInNode()[pri:0, instance:com.nvidia.cosmos.controller.NodeControllerTest@7a9273a8]" name="upgradeOnBootInNode" duration-ms="38" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at com.nvidia.cosmos.controller.NodeControllerTest.upgradeOnBootInNode(NodeControllerTest.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upgradeOnBootInNode -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.NodeControllerTest@7a9273a8]" name="cleanUp" is-config="true" duration-ms="0" started-at="2016-09-01T20:19:34Z" finished-at="2016-09-01T20:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.NodeControllerTest -->
+      <class name="com.nvidia.cosmos.controller.CustomerControllerTest">
+        <test-method status="PASS" signature="initSpec()[pri:0, instance:com.nvidia.cosmos.controller.CustomerControllerTest@12f41634]" name="initSpec" is-config="true" duration-ms="1025" started-at="2016-09-01T20:19:29Z" finished-at="2016-09-01T20:19:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSpec -->
+        <test-method status="FAIL" signature="fetch()[pri:0, instance:com.nvidia.cosmos.controller.CustomerControllerTest@12f41634]" name="fetch" duration-ms="2090" started-at="2016-09-01T20:19:30Z" finished-at="2016-09-01T20:19:32Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at com.nvidia.cosmos.controller.CustomerControllerTest.fetch(CustomerControllerTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetch -->
+        <test-method status="FAIL" signature="customerExit()[pri:0, instance:com.nvidia.cosmos.controller.CustomerControllerTest@12f41634]" name="customerExit" duration-ms="101" started-at="2016-09-01T20:19:32Z" finished-at="2016-09-01T20:19:32Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<This email is acceptable> but was:<Customer with this email already exists>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<This email is acceptable> but was:<Customer with this email already exists>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at com.nvidia.cosmos.controller.CustomerControllerTest.customerExit(CustomerControllerTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerExit -->
+        <test-method status="FAIL" signature="register()[pri:0, instance:com.nvidia.cosmos.controller.CustomerControllerTest@12f41634]" name="register" duration-ms="73" started-at="2016-09-01T20:19:32Z" finished-at="2016-09-01T20:19:33Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at com.nvidia.cosmos.controller.CustomerControllerTest.register(CustomerControllerTest.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="listCCustomers()[pri:0, instance:com.nvidia.cosmos.controller.CustomerControllerTest@12f41634]" name="listCCustomers" duration-ms="84" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listCCustomers -->
+        <test-method status="FAIL" signature="customerDelete()[pri:0, instance:com.nvidia.cosmos.controller.CustomerControllerTest@12f41634]" name="customerDelete" duration-ms="66" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at com.nvidia.cosmos.controller.CustomerControllerTest.customerDelete(CustomerControllerTest.java:212)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerDelete -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.nvidia.cosmos.controller.CustomerControllerTest@12f41634]" name="cleanUp" is-config="true" duration-ms="0" started-at="2016-09-01T20:19:33Z" finished-at="2016-09-01T20:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.nvidia.cosmos.controller.CustomerControllerTest -->
+    </test> <!-- Nvidia-Rest_API's-Test -->
+  </suite> <!-- Suite -->
+</testng-results>

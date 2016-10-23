@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Nvidia-Rest_API's-Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Nvidia-Rest_API's-Test</h1>
+<p>
+  Test duration: 8.282s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.ClusterControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  updateClusterNfsDetails
+      </td>
+  <td class="duration">
+    0.131s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;timestamp&quot; (class com.nvidia.cosmos.cloud.dtos.ApiResponseDTO), not marked as ignorable (2 known properties: &quot;message&quot;, &quot;statusCode&quot;])<br/>
+ at [Source: {&quot;timestamp&quot;:1472741373281,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/api/cluster/updatenfs&quot;}; line: 1, column: 27] (through reference chain: com.nvidia.cosmos.cloud.dtos.ApiResponseDTO[&quot;timestamp&quot;])</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:51)<br />
+              com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:839)<br />
+              com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1045)<br />
+              com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1352)<br />
+              com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1330)<br />
+              com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:264)<br />
+              com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:125)<br />
+              com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3736)<br />
+              com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2764)<br />
+              com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)<br />
+              com.jayway.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:43)<br />
+              com.jayway.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)<br />
+              com.jayway.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:60)<br />
+              com.jayway.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)<br />
+              com.jayway.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:202)<br />
+              com.jayway.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)<br />
+              com.jayway.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:55)<br />
+              com.jayway.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)<br />
+              com.jayway.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:216)<br />
+              com.jayway.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:159)<br />
+              com.nvidia.cosmos.controller.ClusterControllerTest.updateClusterNfsDetails(ClusterControllerTest.java:117)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:659)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:771)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1124)<br />
+              org.testng.TestNG.run(TestNG.java:1032)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.CustomerControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  customerDelete
+      </td>
+  <td class="duration">
+    0.066s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              com.nvidia.cosmos.controller.CustomerControllerTest.customerDelete(CustomerControllerTest.java:212)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:659)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:771)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1124)<br />
+              org.testng.TestNG.run(TestNG.java:1032)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  customerExit
+      </td>
+  <td class="duration">
+    0.101s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected:&lt;This email is acceptable&gt; but was:&lt;Customer with this email already exists&gt;</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)<br />
+              org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)<br />
+              com.nvidia.cosmos.controller.CustomerControllerTest.customerExit(CustomerControllerTest.java:118)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:659)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:771)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1124)<br />
+              org.testng.TestNG.run(TestNG.java:1032)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  fetch
+      </td>
+  <td class="duration">
+    2.090s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              com.nvidia.cosmos.controller.CustomerControllerTest.fetch(CustomerControllerTest.java:92)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:659)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:771)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1124)<br />
+              org.testng.TestNG.run(TestNG.java:1032)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  register
+      </td>
+  <td class="duration">
+    0.073s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              com.nvidia.cosmos.controller.CustomerControllerTest.register(CustomerControllerTest.java:157)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:659)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:771)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1124)<br />
+              org.testng.TestNG.run(TestNG.java:1032)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.LoginControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  resetuser
+      </td>
+  <td class="duration">
+    0.188s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError</b></a><br />
+    <div class="stackTrace" id="exception-5">
+              com.nvidia.cosmos.controller.LoginControllerTest.resetuser(LoginControllerTest.java:142)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:659)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:771)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1124)<br />
+              org.testng.TestNG.run(TestNG.java:1032)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.NodeControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  upgradeOnBootInNode
+      </td>
+  <td class="duration">
+    0.038s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              com.nvidia.cosmos.controller.NodeControllerTest.upgradeOnBootInNode(NodeControllerTest.java:221)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:659)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:771)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1124)<br />
+              org.testng.TestNG.run(TestNG.java:1032)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.UserControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  userDelete
+      </td>
+  <td class="duration">
+    0.040s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError</b></a><br />
+    <div class="stackTrace" id="exception-7">
+              com.nvidia.cosmos.controller.UserControllerTest.userDelete(UserControllerTest.java:280)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:659)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:771)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:259)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1124)<br />
+              org.testng.TestNG.run(TestNG.java:1032)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.ClusterControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  findAllClustersDetails
+      </td>
+  <td class="duration">
+    0.058s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getClusterByName
+      </td>
+  <td class="duration">
+    0.040s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getNodeInfo
+      </td>
+  <td class="duration">
+    0.037s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.CustomerControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  listCCustomers
+      </td>
+  <td class="duration">
+    0.084s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.DashBoardControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  dashboard
+      </td>
+  <td class="duration">
+    0.039s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.EntitilementControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  fetchByEntitlementName
+      </td>
+  <td class="duration">
+    0.068s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  listByEntitlementName
+      </td>
+  <td class="duration">
+    0.054s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  listCEntitlements1
+      </td>
+  <td class="duration">
+    0.119s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  saveEntitilement1
+      </td>
+  <td class="duration">
+    0.112s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.EulaControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  saveEula
+      </td>
+  <td class="duration">
+    0.317s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.GrafanaControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  clusterGrafanaDataByCustomer
+      </td>
+  <td class="duration">
+    0.116s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  customerGrfanaDetails
+      </td>
+  <td class="duration">
+    0.038s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  nodeGrafanaDataByCustomer
+      </td>
+  <td class="duration">
+    0.165s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.LoginControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  reset
+      </td>
+  <td class="duration">
+    0.073s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  resetverify
+      </td>
+  <td class="duration">
+    0.051s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.NodeControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getNodeByCluster
+      </td>
+  <td class="duration">
+    0.037s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getNodeById
+      </td>
+  <td class="duration">
+    0.040s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getNodeByName
+      </td>
+  <td class="duration">
+    0.038s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  nodecreate
+      </td>
+  <td class="duration">
+    0.214s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nvidia.cosmos.controller.UserControllerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  findUserProfile
+      </td>
+  <td class="duration">
+    0.030s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  listUsers
+      </td>
+  <td class="duration">
+    0.056s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  profileUpdate
+      </td>
+  <td class="duration">
+    0.039s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  register
+      </td>
+  <td class="duration">
+    0.136s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  updateUserProfile
+      </td>
+  <td class="duration">
+    1.888s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  updateuser
+      </td>
+  <td class="duration">
+    0.053s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  userValidate
+      </td>
+  <td class="duration">
+    0.613s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

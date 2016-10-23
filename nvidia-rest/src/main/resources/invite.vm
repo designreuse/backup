@@ -1,0 +1,44 @@
+<html>
+	<head>
+	 	<style>
+			#main{
+			max-width:900px;
+			margin:0 auto;
+			}
+			#logo{
+			text-align:center;
+			width:100%;
+			}
+			.img{
+			background-color:#00b6ad;
+			padding:10px 30px;
+			}
+			#body{
+			border:6px solid #efefef;
+			border-radius:5px ;
+			 margin:10px;
+			 padding:10px;
+			}
+			#footer{
+			 margin:10px;
+			}
+	 	</style>
+	</head>
+	<body>
+		<div id="main">
+			
+			<div id="body">
+				<div id="logo">
+			<img src="http://www.fetchlogos.com/wp-content/uploads/2015/12/Nvidia-Logo-600x319.jpg" width="110" height="50" class="img"></img>
+			</div>
+			<p>Hello <span style="text-transform:capitalize;">$userName</span></p>
+			<p><b style="text-transform:capitalize;">$inviteeName</b> has invited you to join Nvidia. Please <a href="$invitationLink">click here </a>to Register.</p>
+			 <div>
+				Cheers,<br>
+				Team NVIDIA.
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>NVIDIA Email Template</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="stylesheet" type="text/css"
+          href="fonts/style.css"/>
+  <style> @import 'fonts/DINPro-Bold_13934.ttf';
+</style>
+</head>
+<body style="margin: 0; padding: 0;" yahoo="fix" bgcolor="#ededed">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0"  style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:DIN Pro Medium;font-weight:200;">
+      <!--  spacing  -->
+      <tr>
+        <td width="100%" height="30">&nbsp;</td>
+      </tr>
+      <!--  end spacing  -->
+      <tr>
+        <td>
+          <table width="600" align="center"  border="0" cellpadding="0" cellspacing="0"  bgcolor="#ffffff" style="border:1px solid #c9c9c9;">
+            <!--  section title  -->
+            <tr>
+              <td>
+					<table width="100%" bgcolor="#76b900" border="0" cellpadding="0" cellspacing="0" style="padding:0px;margin:0px;">
+						<tr style="height:30px">
+							<td><img src="$corporateHeader" alt="NVIDIA" width="110" style="padding-top:15px;padding-bottom:15px;padding-left:30px;"/></td>
+							
+						</tr>
+					</table>
+			  </td>
+            </tr>
+            <!--  end section title  -->
+
+            <!--  spacing  -->
+            <tr>
+              <td width="100%" height="30">&nbsp;</td>
+            </tr>        
+            <!--  end spacing  -->
+          
+            <tr >
+              <td style="padding-left:30px;padding-right:30px;font-size:18px;color:#76b900;line-height:18px;font-family: 'Ropa Sans', sans-serif;text-transform:uppercase;">
+                HELLO $userName,
+              </td>
+            </tr>
+			 <!--  spacing  -->
+            <tr>
+              <td width="100%" height="10">&nbsp;</td>
+            </tr>
+            <!--  end spacing  -->
+			<tr>
+				<td style="padding-left:30px;padding-right:30px;font-size:13px;color:#000000;line-height:30px;">
+                We received a request for a change of password from you. If you didn't request a password change, ignore this email and we'll ignore the request. Please click the button below to reset your password.
+              </td>
+			</tr>
+            
+            <!--  spacing  -->
+            <tr>
+              <td width="100%" height="30">&nbsp;</td>
+            </tr>
+            <!--  end spacing  -->
+             <tr>
+              <td  style="padding-left:30px;padding-right:30px;">
+				<a href="$resetPasswordLink" style="background:#76b900;color:#ffffff;padding:10PX;border:1px solid #76b900;font-size:13px;font-family:'DIN Pro Bold';text-decoration:none;">RESET PASSWORD</a>
+			  </td>
+            </tr>
+            <!--  spacing  -->
+            <tr>
+              <td width="100%" height="30">&nbsp;</td>
+            </tr>
+            <!--  end spacing  -->
+          </table>
+        </td>
+      </tr>
+	  <tr>
+        <td width="100%" height="12"></td>
+      </tr>
+  </table><!--  end features section  -->
+</body>
+</html>

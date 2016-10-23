@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Nvidia-Rest_API&#039;s-Test(failed)">
+    <classes>
+      <class name="com.nvidia.cosmos.controller.NodeControllerTest">
+        <methods>
+          <include name="initSpec"/>
+          <include name="upgradeOnBootInNode"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.NodeControllerTest -->
+      <class name="com.nvidia.cosmos.controller.EntitilementControllerTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="initSpec"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.EntitilementControllerTest -->
+      <class name="com.nvidia.cosmos.controller.UserControllerTest">
+        <methods>
+          <include name="initSpec"/>
+          <include name="userDelete"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.UserControllerTest -->
+      <class name="com.nvidia.cosmos.controller.ClusterControllerTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="initSpec"/>
+          <include name="updateClusterNfsDetails"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.ClusterControllerTest -->
+      <class name="com.nvidia.cosmos.controller.LoginControllerTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="resetuser"/>
+          <include name="initSpec"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.LoginControllerTest -->
+      <class name="com.nvidia.cosmos.controller.EulaControllerTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="initSpec"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.EulaControllerTest -->
+      <class name="com.nvidia.cosmos.controller.DashBoardControllerTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="initSpec"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.DashBoardControllerTest -->
+      <class name="com.nvidia.cosmos.controller.CustomerControllerTest">
+        <methods>
+          <include name="customerExit"/>
+          <include name="register"/>
+          <include name="fetch"/>
+          <include name="cleanUp"/>
+          <include name="customerDelete"/>
+          <include name="initSpec"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.CustomerControllerTest -->
+      <class name="com.nvidia.cosmos.controller.GrafanaControllerTest">
+        <methods>
+          <include name="initSpec"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.nvidia.cosmos.controller.GrafanaControllerTest -->
+    </classes>
+  </test> <!-- Nvidia-Rest_API's-Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

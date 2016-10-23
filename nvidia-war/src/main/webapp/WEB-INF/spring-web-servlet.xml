@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<context:component-scan base-package="com.tresbu.nvidia.web" />
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/jsp/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<bean id="mNvidiaDaoIntrface" class="com.tresbu.nvidia.dao.impl.NvidiaDaoImpl" />
+	<bean id="mNvidiaServiceIntrface" class="com.tresbu.nvidia.service.impl.NvidiaServiceImpl" />
+
+	<bean id="mNvidiaInsertDataService"
+		class="com.tresbu.nvidia.insert.service.NvidiaInsertDataServiceImpl" />
+	<bean id="mNvidiaInsertDataDao" class="com.tresbu.nvidia.insert.dao.NvidiaInsertDataDaoImpl" />
+	<bean id="mAppConfigIntrface" class="com.tresbu.nvidia.common.util.AppConfigImpl" />
+	<bean id="mAppUtilIntrface" class="com.tresbu.nvidia.common.util.AppUtilImpl" />
+	
+	<bean id="mAlertDetailIntrface" class="com.tresbu.nvidia.alert.detail.AlertDetailImpl" />
+
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/nvidia" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>
+
+	<bean id="mJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
+		lazy-init="true">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<mvc:annotation-driven />
+
+	<mvc:default-servlet-handler />
+
+</beans>

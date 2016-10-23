@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Nvidia-Rest_API's-Test">
+   <listeners>
+     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+   <classes>
+     <class name="com.nvidia.cosmos.controller.CustomerControllerTest"/>
+     <class name="com.nvidia.cosmos.controller.ClusterControllerTest"/>
+     <class name="com.nvidia.cosmos.controller.DashBoardControllerTest"/>
+     <class name="com.nvidia.cosmos.controller.EulaControllerTest"/>
+     <class name="com.nvidia.cosmos.controller.EntitilementControllerTest"/>
+     <class name="com.nvidia.cosmos.controller.GrafanaControllerTest"/>
+     <class name="com.nvidia.cosmos.controller.NodeControllerTest"/>
+     <class name="com.nvidia.cosmos.controller.LoginControllerTest"/>
+     <class name="com.nvidia.cosmos.controller.UserControllerTest"/>
+     
+   </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
